@@ -3,6 +3,4 @@ Flask is a lightweight web framework for Python. It is designed to be simple and
 
 ### Installation:
 You can install Flask using pip, the Python package manager:
-
-`bash
-pip install Flask`
+`pip install Flask`
