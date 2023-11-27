@@ -87,6 +87,7 @@ def get_all_person():
     return data
 
 
+# Dynamic Routing
 @app.route("/person/<int:id>")
 def get_person_hanlder(id):
     for person in data:
@@ -95,6 +96,8 @@ def get_person_hanlder(id):
     return ({"message": f"person not found {id}"}, 404)
 
 
+# DELETE method
+# curl -X DELETE -i -w '\n' localhost:5000/person/3
 @app.route("/person/<int:id>", methods=["DELETE"])
 def delete_person_hanlder(id):
     for person in data:
